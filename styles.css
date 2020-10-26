@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin-top: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 6px;
+  margin-left: -6px;
+  margin-right: -6px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input,
+.radio {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 1rem;
+}
+
+.input label {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.input input {
+  width: 100%;
+}
+
+.radio input {
+  margin-right: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.input .range {
+  display: flex;
+}
+
+.input .shiftValue {
+  margin-left: 1rem;
+}
+
+.result {
+  min-height: 2rem;
+}

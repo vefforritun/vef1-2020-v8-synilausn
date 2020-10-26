@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Verkefni 8</title>
+  </head>
+  <body>
+    <main>
+      <h1>Caesar dulmál</h1>
+      <form class="ceasar" method="get" action="/">
+        <div class="input alphabet">
+          <label for="alphabet">Stafróf:</label>
+          <input type="text" id="alphabet" name="alphabet" value="AÁBDÐEÉFGHIÍJKLMNOÓPRSTUÚVXYÝÞÆÖ">
+        </div>
+
+        <div class="radio">
+          <label>
+            <input checked type="radio" name="type" value="encode">
+            <span>Kóða</span>
+          </label>
+          <label>
+            <input type="radio" name="type" value="decode">
+            <span>Afkóða</span>
+          </label>
+        </div>
+
+        <div class="input">
+          <label for="shift">Hliðrun:</label>
+          <div class="range">
+            <input type="range" min="1" max="32" id="shift" value="3" name="shift">
+            <span class="shiftValue">3</span>
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="input">Strengur:</label>
+          <input type="text" id="input" name="input" autocomplete="off">
+        </div>
+
+        <div class="result"></div>
+      </form>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
